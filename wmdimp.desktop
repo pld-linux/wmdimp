@@ -6,5 +6,5 @@ Comment[pl]=Muzyczny odtwarzacz cyfrowy
 Exec=wmdimp
 Terminal=false
 Type=Application
-Categories=Audio;Player;
+Categories=Applet;
 # vi: encoding=utf-8
