@@ -1,0 +1,9 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=wmdimp
+Comment=Digital Music Player
+Comment[pl]=Muzyczny odtwarzacz cyfrowy
+Exec=wmdimp
+Terminal=false
+Type=Application
+# vi: encoding=utf-8
