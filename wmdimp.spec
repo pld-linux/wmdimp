@@ -6,7 +6,7 @@ Summary:	Window Maker DIgital Music Player
 Summary(pl):	Muzyczny Odtwarzacz Cyfrowy dla Window Makera
 Name:		wmdimp
 Version:	0.3
-Release:	2
+Release:	3
 License:	GPL v2
 Group:		X11/Window Managers/Tools
 Source0:	http://www.dei.unipd.it/~datamino/%{name}-%{version}.tar.gz
@@ -42,12 +42,12 @@ CFLAGS="%{rpmcflags} -DNDEBUG=1"
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{_desktopdir}
+install -d $RPM_BUILD_ROOT%{_desktopdir}/docklets
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-install %{SOURCE1} $RPM_BUILD_ROOT%{_desktopdir}
+install %{SOURCE1} $RPM_BUILD_ROOT%{_desktopdir}/docklets
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -56,5 +56,5 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc AUTHORS ChangeLog NEWS README TODO sample.wmdimprc
 %attr(755,root,root) %{_bindir}/*
-%{_desktopdir}/*.desktop
+%{_desktopdir}/docklets/*.desktop
 %{_mandir}/man1/*
