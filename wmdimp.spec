@@ -6,7 +6,7 @@ Summary:	Window Maker DIgital Music Player
 Summary(pl):	Muzyczny Odtwarzacz Cyfrowy dla Window Makera
 Name:		wmdimp
 Version:	0.3
-Release:	1
+Release:	2
 License:	GPL v2
 Group:		X11/Window Managers/Tools
 Source0:	http://www.dei.unipd.it/~datamino/%{name}-%{version}.tar.gz
@@ -15,7 +15,7 @@ Source1:	%{name}.desktop
 URL:		http://wmdimp.cjb.net/
 %{?with_mad:BuildRequires:	libmad-devel}
 %{?with_mad:BuildRequires:	libid3tag-devel}
-%{!?with_mad:Requires:	mpg123}
+%{!?with_mad:Requires:		mpg123}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -42,12 +42,12 @@ CFLAGS="%{rpmcflags} -DNDEBUG=1"
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{_applnkdir}/DockApplets
+install -d $RPM_BUILD_ROOT%{_desktopdir}
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/DockApplets
+install %{SOURCE1} $RPM_BUILD_ROOT%{_desktopdir}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -56,5 +56,5 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc AUTHORS ChangeLog NEWS README TODO sample.wmdimprc
 %attr(755,root,root) %{_bindir}/*
-%{_applnkdir}/DockApplets/%{name}.desktop
+%{_desktopdir}/*.desktop
 %{_mandir}/man1/*
