@@ -32,14 +32,14 @@ kodzie wmmp3 ale prawie ca³kowicie przepisanego. U¿ywa ma³ych zasobów
 pamiêci i mocy procesora.
 
 %prep
-%setup -q 
+%setup -q
 
 %build
 # always - doesn't build without NDEBUG
 CFLAGS="%{rpmcflags} -DNDEBUG=1"
 %configure \
 	%{!?with_mad:--without-mad}
-	
+
 %{__make}
 
 %install
