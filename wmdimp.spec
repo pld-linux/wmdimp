@@ -9,11 +9,11 @@ Version:	0.3
 Release:	3
 License:	GPL v2
 Group:		X11/Window Managers/Tools
-#Source0Download: http://www.dei.unipd.it/~datamino/content.html#download
-Source0:	http://www.dei.unipd.it/~datamino/%{name}-%{version}.tar.gz
+#Source0Download: http://www.dei.unipd.it/~datamino/wmdimp/content.html#download
+Source0:	http://www.dei.unipd.it/~datamino/wmdimp/%{name}-%{version}.tar.gz
 # Source0-md5:	6175f0ed3307d346b9eb8718401c40c7
 Source1:	%{name}.desktop
-URL:		http://wmdimp.cjb.net/
+URL:		http://www.dei.unipd.it/~datamino/wmdimp/
 BuildRequires:	XFree86-devel
 %{?with_mad:BuildRequires:	libid3tag-devel}
 %{?with_mad:BuildRequires:	libmad-devel}
