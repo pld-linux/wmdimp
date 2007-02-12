@@ -3,7 +3,7 @@
 %bcond_without	mad	# enable MP3 player using wrapper to mpg123
 #
 Summary:	Window Maker DIgital Music Player
-Summary(pl):	Muzyczny Odtwarzacz Cyfrowy dla Window Makera
+Summary(pl.UTF-8):   Muzyczny Odtwarzacz Cyfrowy dla Window Makera
 Name:		wmdimp
 Version:	0.3
 Release:	3
@@ -25,11 +25,11 @@ Wmdimp is a digital music palyer. It uses an internal player based on
 libmad, or a wrapper to mpg123. Based on wmmp3 code, but almost
 completely rewritten. It uses low memory and cpu power.
 
-%description -l pl
-Wmdimp jest muzycznym odtwarzaczem cyfrowym. U¿ywa wewnêtrznego
-odtwarzacza opartego o libmad albo nak³adki na mpg123. Jest oparty na
-kodzie wmmp3 ale prawie ca³kowicie przepisanego. U¿ywa ma³ych zasobów
-pamiêci i mocy procesora.
+%description -l pl.UTF-8
+Wmdimp jest muzycznym odtwarzaczem cyfrowym. UÅ¼ywa wewnÄ™trznego
+odtwarzacza opartego o libmad albo nakÅ‚adki na mpg123. Jest oparty na
+kodzie wmmp3 ale prawie caÅ‚kowicie przepisanego. UÅ¼ywa maÅ‚ych zasobÃ³w
+pamiÄ™ci i mocy procesora.
 
 %prep
 %setup -q
