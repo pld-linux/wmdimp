@@ -3,7 +3,7 @@
 %bcond_without	mad	# enable MP3 player using wrapper to mpg123
 #
 Summary:	Window Maker DIgital Music Player
-Summary(pl.UTF-8):   Muzyczny Odtwarzacz Cyfrowy dla Window Makera
+Summary(pl.UTF-8):	Muzyczny Odtwarzacz Cyfrowy dla Window Makera
 Name:		wmdimp
 Version:	0.3
 Release:	3
